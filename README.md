@@ -1,2 +1,2 @@
-# Rosalind_Challenges
+# Rosalind-Challenges
 http://rosalind.info/users/khoangotran/
