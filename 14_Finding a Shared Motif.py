@@ -10,7 +10,7 @@ def longest_common_substring(input):
     # Search for common substring
     print('Now searching for longest common substring...')
     for index_begin in range(len(string_1)):
-        for index_end in range(1, len(string_1)):
+        for index_end in range(1, len(string_1) + 1):
             for string_2 in input:
                 if string_1 != string_2[1]:
                     segment = string_1[index_begin:index_end]
