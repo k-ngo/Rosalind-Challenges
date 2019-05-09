@@ -14,8 +14,9 @@ def convert_DNA_ORF_to_protein(DNA):
     rvs_frame_2 = wrap(DNA_rvs[1:-2], 3)
     rvs_frame_3 = wrap(DNA_rvs[2:-1], 3)
     rvs_frame_list = [rvs_frame_1, rvs_frame_2, rvs_frame_3]
-    frame_list = reg_frame_list + rvs_frame_list
     # Compile all 6 reading frames (start codon: AUG) as nested lists inside 1 list
+    frame_list = reg_frame_list + rvs_frame_list
+    # Translate the reading frames into proteins
     for frame in frame_list:
         temp_translation_list = []
         for segment in frame:
@@ -23,7 +24,7 @@ def convert_DNA_ORF_to_protein(DNA):
                 if segment == protein[0]:
                     temp_translation_list.append(protein[1])
         translation_list.append(''.join(temp_translation_list))
-    # Search for Open Reading Frames in all nested lists then append to result list
+    # Search for Open Reading Frames in the translated lists then append to a result list
     result = []
     match = re.compile(r'(?=(M(.*?)(Stop)))')
     for string in translation_list:
