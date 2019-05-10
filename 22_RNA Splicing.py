@@ -33,10 +33,6 @@ while '' in RNA_codon_list:
     RNA_codon_list.remove('')
 RNA_codon_list = [i.split(' ') for i in RNA_codon_list]
 
-'''with open('rosalind_splc.txt', 'r') as f:
-    input = f.read().split('\n')
-input = [[input[i], input[i+1]] for i in range(0, len(input), 2)]'''
-
 input = []
 with open('rosalind_splc.txt', 'r') as f:
     data = f.read().split('>')
