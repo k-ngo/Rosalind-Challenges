@@ -1,4 +1,5 @@
 from itertools import permutations
+
 def signed_permutations(n):
     """Return the total number of signed permutations of
     length n, followed by a list of all such permutations

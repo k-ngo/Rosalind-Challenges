@@ -1,6 +1,3 @@
-from itertools import permutations
-from re import finditer
-
 def spliced_motif(s, t):
     """Return one collection of indices of s in which
     the symbols of t appear as a subsequence of s.
