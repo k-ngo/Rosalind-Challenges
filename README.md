@@ -11,7 +11,7 @@ Notable problem:
 
  	25_Genome Assembly as Shortest Superstring.py
   
-The premise is simple: return a shortest superstring containing all the given strings,constructed by gluing together longest segments that overlap.
+The premise is simple: return a shortest superstring containing all the given strings, constructed by gluing together longest segments that overlap.
 
 If the given list of string were ordered, such that simply concatenating all strings starting from index 0 to index n (where n is the last index of the list) while removing all overlapping elements in between the two strings, the problem would be finished very quick.
 
